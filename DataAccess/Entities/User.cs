@@ -24,6 +24,6 @@ namespace DataAccess.Entities
 
         public Role Role { get; set; }
 
-        public List<UserGame> UserFoods { get; set; }
+        public List<UserFood> UserFoods { get; set; }
     }
 }

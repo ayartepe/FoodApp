@@ -17,6 +17,6 @@ namespace DataAccess.Entities
         public int? ChefId { get; set; }
         public Chef Chef { get; set; }
 
-        public List<UserGame> UserFoods { get; set; }
+        public List<UserFood> UserFoods { get; set; }
     }
 }

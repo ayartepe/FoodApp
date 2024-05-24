@@ -88,7 +88,7 @@ namespace Business.Services
 				//	UserId = userInput
 				//}).ToList()
 				// Way 3: filling entity's UserFoods collection elements
-				UserFoods = model.UsersInput?.Select(userInput => new UserGame()
+				UserFoods = model.UsersInput?.Select(userInput => new UserFood()
 				{
 					UserId = userInput
 				}).ToList()
@@ -127,7 +127,7 @@ namespace Business.Services
 			entity.OrderDate = model.OrderDate;
 			entity.SalesPrice = model.SalesPrice;
 			entity.ChefId = model.ChefId;
-			entity.UserFoods = model.UsersInput?.Select(userInput => new UserGame()
+			entity.UserFoods = model.UsersInput?.Select(userInput => new UserFood()
 			{
 				UserId = userInput
 			}).ToList();
